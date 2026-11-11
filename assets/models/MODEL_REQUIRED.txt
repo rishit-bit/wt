@@ -1,0 +1,1 @@
+Add a licensed real sneaker model named sneaker.glb to this folder for the 3D viewer.

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#17181f"><title>Client Login | KicksLab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="client-login-page">
+  <nav class="navbar navbar-expand-lg navbar-kl">
+    <div class="container-xl">
+      <a class="brand-mark" href="index.html">SNEAK<span>PEAK</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#loginNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="loginNav">
+        <div class="navbar-nav ms-auto align-items-lg-center">
+          <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="shop.html">Shop</a>
+          <a class="nav-link" href="wishlist.html">Wishlist</a><a class="nav-link" href="cart.html">Bag</a>
+          <a class="nav-link" href="contact.html">Contact</a><a class="nav-link" href="register.html">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="client-login-wrap">
+    <section class="client-login-card glass">
+      <div class="client-login-art" aria-hidden="true">
+        <span class="login-orbit login-orbit-a"></span><span class="login-orbit login-orbit-b"></span>
+        <div class="login-art-copy"><span class="eyebrow">STEP INTO YOUR STYLE</span><h1>GOOD SHOES.<br><em>GOOD MOOD.</em></h1><p>Your next favourite pair is waiting.</p></div>
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="Red sneaker">
+      </div>
+      <div class="client-login-form-panel">
+        <span class="eyebrow">WELCOME BACK</span>
+        <h2>Client Login</h2>
+        <p class="muted">Sign in to continue shopping at KicksLab.</p>
+        <div id="loginNotice" class="login-notice" role="status" aria-live="polite"></div>
+        <form id="clientLoginForm" novalidate>
+          <div class="mb-3"><label class="form-label" for="clientEmail">Email address</label><input class="form-control" id="clientEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+          <div class="mb-2"><label class="form-label" for="clientPassword">Password</label><div class="login-password-wrap"><input class="form-control" id="clientPassword" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required><button type="button" id="toggleClientPassword" class="password-toggle" aria-label="Show password">Show</button></div></div>
+          <div class="login-options"><label><input type="checkbox" id="rememberClient"> Remember me</label><a href="contact.html">Need help?</a></div>
+          <button class="btn-kl btn-lime w-100 mt-3" type="submit">SIGN IN <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="login-signup-note">New to KicksLab? <a href="register.html">Create an account</a>.</p>
+        <a class="login-guest-link" href="shop.html">Continue browsing as guest</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container-xl d-flex justify-content-between flex-wrap gap-2"><span class="brand-mark">SNEAK<span>PEAK</span></span><span class="muted small">© <span data-year></span> KicksLab. All rights reserved.</span></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script><script src="js/validation.js"></script><script src="js/client-auth.js"></script>
+</body>
+</html>
